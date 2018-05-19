@@ -1,0 +1,31 @@
+# Maintainer: Norcux OS Team
+
+pkgname=norcuxos-sddm-theme
+pkgver=0.1
+pkgrel=1
+pkgdesc="The NorcuxOS SDDM Theme "
+arch=('any')
+url="https://github.com/NorcuxOS/sddm-theme"
+license=('GPL3')
+depends=('bash'
+         'coreutils'
+         'filesystem'
+         'curl'
+         'wget'
+         'grep'
+         'sed'
+         'filesystem')
+#makedepends=()
+#checkdepends=()
+#optdepends=()
+#options=()
+source=("${url}/archive/$pkgver.tar.gz")
+md5sums=('SKIP')
+validpgpkeys=()
+
+
+package() {
+	cd  "${srcdir}/sddm-theme-${pkgver}/"
+	mkdir -p ${pkgdir}/usr/share/sddm/themes/
+	cp -r * "${pkgdir}/usr/share/sddm/themes/"
+}
