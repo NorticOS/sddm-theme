@@ -3,7 +3,7 @@
 pkgname=norcuxos-sddm-theme
 pkgver=0.1
 pkgrel=2
-pkgdesc="The NorcuxOS SDDM Theme "
+pkgdesc="The NorcuxOS SDDM Theme"
 arch=('any')
 url="https://github.com/NorcuxOS/sddm-theme"
 license=('GPL3')
