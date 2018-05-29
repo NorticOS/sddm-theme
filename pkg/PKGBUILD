@@ -2,19 +2,12 @@
 
 pkgname=norcuxos-sddm-theme
 pkgver=0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="The NorcuxOS SDDM Theme "
 arch=('any')
 url="https://github.com/NorcuxOS/sddm-theme"
 license=('GPL3')
-depends=('bash'
-         'coreutils'
-         'filesystem'
-         'curl'
-         'wget'
-         'grep'
-         'sed'
-         'filesystem')
+depends=('sddm')
 #makedepends=()
 #checkdepends=()
 #optdepends=()
@@ -27,5 +20,5 @@ validpgpkeys=()
 package() {
 	cd  "${srcdir}/sddm-theme-${pkgver}/"
 	mkdir -p ${pkgdir}/usr/share/sddm/themes/
-	cp -r * "${pkgdir}/usr/share/sddm/themes/"
+	cp -r norcuxos "${pkgdir}/usr/share/sddm/themes/"
 }
