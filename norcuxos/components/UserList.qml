@@ -43,7 +43,7 @@ ListView {
 
     delegate: UserDelegate {
         avatarPath: model.icon || ""
-        iconSource: model.iconName || "user-identity"
+        iconSource: model.iconName || "/usr/share/sddm/themes/norcuxos/user-identity.svg"
 
         name: {
             var displayName = model.realName || model.name

@@ -115,28 +115,28 @@ PlasmaCore.ColorScope {
 
             actionItems: [
                 ActionButton {
-                    iconSource: "system-suspend"
+                    iconSource: "/usr/share/sddm/themes/norcuxos/system-suspend.svg"
                     text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Suspend")
                     onClicked: sddm.suspend()
                     enabled: sddm.canSuspend
                     visible: !inputPanel.keyboardActive
                 },
                 ActionButton {
-                    iconSource: "system-reboot"
+                    iconSource: "/usr/share/sddm/themes/norcuxos/system-reboot.svg"
                     text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Restart")
                     onClicked: sddm.reboot()
                     enabled: sddm.canReboot
                     visible: !inputPanel.keyboardActive
                 },
                 ActionButton {
-                    iconSource: "system-shutdown"
+                    iconSource: "/usr/share/sddm/themes/norcuxos/system-shutdown.svg"
                     text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Shutdown")
                     onClicked: sddm.powerOff()
                     enabled: sddm.canPowerOff
                     visible: !inputPanel.keyboardActive
                 },
                 ActionButton {
-                    iconSource: "system-search"
+                    iconSource: "/usr/share/sddm/themes/norcuxos/system-search.svg"
                     text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Different User")
                     onClicked: mainStack.push(userPromptComponent)
                     enabled: true
@@ -150,11 +150,11 @@ PlasmaCore.ColorScope {
             }
         }
 
-        Behavior on opacity {
+        /*Behavior on opacity {
             OpacityAnimator {
                 duration: units.longDuration
             }
-        }
+        }*/
     }
 
     Loader {
@@ -288,7 +288,7 @@ PlasmaCore.ColorScope {
 
             actionItems: [
                 ActionButton {
-                    iconSource: "go-previous"
+                    iconSource: "/usr/share/sddm/themes/norcuxos/go-previous.svg"
                     text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Back")
                     onClicked: mainStack.pop()
                 }
@@ -336,18 +336,18 @@ PlasmaCore.ColorScope {
     Connections {
         target: sddm
         onLoginFailed: {
-	    footer.opacity = 1
-	    mainStack.opacity = 1
-	    dateTimeClock.opacity = 1
+	    footer.enabled = true
+	    mainStack.enabled = true
+	    dateTimeClock.enabled = true
             notificationMessage = i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Login Failed")
         }
         onLoginSucceeded: {
             //note SDDM will kill the greeter at some random point after this
             //there is no certainty any transition will finish, it depends on the time it
             //takes to complete the init
-	    footer.opacity = 0
-            mainStack.opacity = 0
-	    dateTimeClock.opacity = 0
+            footer.enabled = false
+            mainStack.enabled = false
+            dateTimeClock.enabled = false
         }
     }
 

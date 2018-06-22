@@ -31,16 +31,16 @@ SessionManagementScreen {
     function startLogin() {
         var username = showUsernamePrompt ? userNameInput.text : userList.selectedUser
         var password = passwordBox.text
-
+        
+        footer.enabled = false;
+        mainStack.enabled = false;
+        
         //this is partly because it looks nicer
         //but more importantly it works round a Qt bug that can trigger if the app is closed with a TextField focussed
         //DAVE REPORT THE FRICKING THING AND PUT A LINK
         loginButton.forceActiveFocus();
-	
-	footer.opacity = 0.4;
-	mainStack.opacity = 0.4;
 
-	loginRequest(username, password);
+        loginRequest(username, password);
     }
 
     PlasmaComponents.TextField {
