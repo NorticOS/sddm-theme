@@ -60,7 +60,7 @@ SessionManagementScreen {
         placeholderText: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Password")
         focus: !showUsernamePrompt || lastUserName
         echoMode: TextInput.Password
-        revealPasswordButtonShown: true
+        revealPasswordButtonShown: false
 
         onAccepted: startLogin();
 

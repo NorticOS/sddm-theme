@@ -1,7 +1,7 @@
 # Maintainer: Norcux OS Team
 
 pkgname=norcuxos-sddm-theme
-pkgver=0.2.2
+pkgver=0.2.3
 pkgrel=1
 pkgdesc="The NorcuxOS SDDM Theme"
 arch=('any')
