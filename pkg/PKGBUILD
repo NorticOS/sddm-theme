@@ -1,9 +1,9 @@
 # Maintainer: Norcux OS Team
 
 pkgname=norcuxos-sddm-theme
-pkgver=0.2.3
+pkgver=0.2.4
 pkgrel=1
-pkgdesc="The NorcuxOS SDDM Theme"
+pkgdesc="The Norcux OS SDDM theme"
 arch=('any')
 url="https://github.com/NorcuxOS/sddm-theme"
 license=('GPL3')
