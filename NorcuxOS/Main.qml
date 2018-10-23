@@ -115,28 +115,28 @@ PlasmaCore.ColorScope {
 
             actionItems: [
                 ActionButton {
-                    iconSource: "/usr/share/sddm/themes/norcuxos/system-suspend.svg"
+                    iconSource: "/usr/share/sddm/themes/NorcuxOS/system-suspend.svg"
                     text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Suspend")
                     onClicked: sddm.suspend()
                     enabled: sddm.canSuspend
                     visible: !inputPanel.keyboardActive
                 },
                 ActionButton {
-                    iconSource: "/usr/share/sddm/themes/norcuxos/system-reboot.svg"
+                    iconSource: "/usr/share/sddm/themes/NorcuxOS/system-reboot.svg"
                     text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Restart")
                     onClicked: sddm.reboot()
                     enabled: sddm.canReboot
                     visible: !inputPanel.keyboardActive
                 },
                 ActionButton {
-                    iconSource: "/usr/share/sddm/themes/norcuxos/system-shutdown.svg"
+                    iconSource: "/usr/share/sddm/themes/NorcuxOS/system-shutdown.svg"
                     text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Shutdown")
                     onClicked: sddm.powerOff()
                     enabled: sddm.canPowerOff
                     visible: !inputPanel.keyboardActive
                 },
                 ActionButton {
-                    iconSource: "/usr/share/sddm/themes/norcuxos/system-search.svg"
+                    iconSource: "/usr/share/sddm/themes/NorcuxOS/system-search.svg"
                     text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Different User")
                     onClicked: mainStack.push(userPromptComponent)
                     enabled: true
@@ -288,7 +288,7 @@ PlasmaCore.ColorScope {
 
             actionItems: [
                 ActionButton {
-                    iconSource: "/usr/share/sddm/themes/norcuxos/go-previous.svg"
+                    iconSource: "/usr/share/sddm/themes/NorcuxOS/go-previous.svg"
                     text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Back")
                     onClicked: mainStack.pop()
                 }

@@ -1,3 +1,9 @@
+norcuxos-grub-theme (0.10.1-1) buster; urgency=medium
+
+  * Fix icons
+
+ -- Norcux OS Team <NorcuxOS@protonmail.com>  Tue, 23 Oct 2018 21:04:00 +0200
+
 norcuxos-grub-theme (0.10-1) buster; urgency=medium
 
   * Initial release
