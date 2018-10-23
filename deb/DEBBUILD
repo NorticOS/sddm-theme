@@ -1,0 +1,21 @@
+maintainer="Norcux OS Team <NorcuxOS@protonmail.com>"
+pkgname=norcuxos-sddm-theme
+pkgver=0.10
+pkgrel=1
+distribution="buster"
+urgency="medium"
+pkgdesc="Norcux OS SDDM theme\nThis package contains the Norcux OS SDDM theme."
+section="x11"
+priority="optional"
+arch=('all')
+url="https://github.com/NorcuxOS/sddm-theme"
+depends=()
+source=("https://codeload.github.com/NorcuxOS/sddm-theme/tar.gz/${pkgver}")
+
+package() {
+	cd "${srcdir}"/sddm-theme-${pkgver}/
+	
+	mkdir -p "${pkgdir}"/usr/share/sddm/themes/
+	
+	cp -r NorcuxOS/ "${pkgdir}"/usr/share/sddm/themes/
+}
