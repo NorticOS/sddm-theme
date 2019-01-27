@@ -1,3 +1,9 @@
+norcuxos-sddm-theme (0.11-1) buster; urgency=medium
+
+  * Update wallpaper
+
+ -- Norcux OS Team <NorcuxOS@protonmail.com>  Sun, 27 Jan 2019 13:30:00 +0100
+
 norcuxos-grub-theme (0.10.1-1) buster; urgency=medium
 
   * Fix icons

@@ -1,15 +1,15 @@
 maintainer="Norcux OS Team <NorcuxOS@protonmail.com>"
 pkgname=norcuxos-sddm-theme
-pkgver=0.10.1
+pkgver=0.11
 pkgrel=1
 distribution="buster"
 urgency="medium"
-pkgdesc="Norcux OS SDDM theme\nThis package contains the Norcux OS SDDM theme."
+pkgdesc="Norcux OS SDDM Theme\nThis package contains the Norcux OS SDDM theme."
 section="x11"
 priority="optional"
 arch=('all')
 url="https://github.com/NorcuxOS/sddm-theme"
-depends=()
+depends=('norcuxos-artwork')
 source=("https://codeload.github.com/NorcuxOS/sddm-theme/tar.gz/${pkgver}")
 
 package() {
