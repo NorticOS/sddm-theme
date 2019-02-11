@@ -1,6 +1,6 @@
 maintainer="Norcux OS Team <NorcuxOS@protonmail.com>"
 pkgname=norcuxos-sddm-theme
-pkgver=0.11
+pkgver=0.12
 pkgrel=1
 distribution="buster"
 urgency="medium"
